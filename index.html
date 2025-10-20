@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shidoverso - Mundo Retro Arcade</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Shidoverso: sitio retro pixel inspirado en juegos arcade clásicos de Capcom.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand">
+        <img src="assets/logo.png" alt="Logo Shidoverso" class="logo">
+        <span class="brand-text">Shidoverso</span>
+      </a>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#reseñas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Shidoverso</h1>
+          <p>Tu mundo retro arcade inspirado en clásicos de Capcom</p>
+          <a class="cta" href="#productos">Ver Productos</a>
+        </div>
+        <div class="hero-media">
+          <!-- Video oficial Capcom -->
+          <iframe class="video-embed" src="https://www.youtube.com/embed/RFGqwbofoLQ" title="Trailer Capcom Arcade" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS (Flexbox) -->
+    <section id="productos" class="productos section">
+      <div class="container">
+        <h2>Productos destacados</h2>
+        <p class="sub">Hardware y juegos seleccionados para tu experiencia arcade</p>
+
+        <div class="product-grid">
+          <article class="card">
+            <img src="assets/product1.jpg" alt="Consola Retro" class="card-img">
+            <div class="card-body">
+              <h3>Consola Retro</h3>
+              <p class="price">$299.99</p>
+              <p class="card-text">Revive los clásicos de Capcom con esta consola arcade portátil.</p>
+              <a class="btn" href="#">Más info</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/product2.jpg" alt="Auriculares Pixel Pro" class="card-img">
+            <div class="card-body">
+              <h3>Auriculares Pixel Pro</h3>
+              <p class="price">$89.99</p>
+              <p class="card-text">Sonido envolvente para sumergirte en tu mundo arcade favorito.</p>
+              <a class="btn" href="#">Más info</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/product3.jpg" alt="Joystick Retro" class="card-img">
+            <div class="card-body">
+              <h3>Joystick Retro</h3>
+              <p class="price">$49.99</p>
+              <p class="card-text">Control ergonómico con estilo pixel para juegos clásicos.</p>
+              <a class="btn" href="#">Más info</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/product4.jpg" alt="Colección Indie Capcom" class="card-img">
+            <div class="card-body">
+              <h3>Colección Indie Capcom</h3>
+              <p class="price">$19.99</p>
+              <p class="card-text">Paquete de juegos retro estilo Capcom seleccionados cuidadosamente.</p>
+              <a class="btn" href="#">Comprar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS (Grid) -->
+    <section id="reseñas" class="reseñas section">
+      <div class="container">
+        <h2>Reseñas de la comunidad</h2>
+        <p class="sub">Opiniones de jugadores que aman el retro arcade</p>
+
+        <div class="reviews-grid">
+          <article class="review">
+            <h3>Julián</h3>
+            <p class="meta">16 Oct 2025 · 5/5</p>
+            <p>La Consola Retro es perfecta para revivir Street Fighter II y Mega Man. ¡Increíble!</p>
+          </article>
+
+          <article class="review">
+            <h3>Sofía</h3>
+            <p class="meta">12 Oct 2025 · 4/5</p>
+            <p>Los auriculares Pixel Pro sumergen en el mundo arcade. Muy recomendable.</p>
+          </article>
+
+          <article class="review">
+            <h3>Mateo</h3>
+            <p class="meta">02 Oct 2025 · 5/5</p>
+            <p>Joystick Retro: control perfecto y sensación auténtica de los 80s.</p>
+          </article>
+
+          <article class="review">
+            <h3>Valeria</h3>
+            <p class="meta">28 Sep 2025 · 4/5</p>
+            <p>Colección Indie Capcom: juegos muy divertidos y auténticos del estilo arcade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO (Formspree) -->
+    <section id="contacto" class="contacto section">
+      <div class="container contact-inner">
+        <div class="contact-info">
+          <h2>Contacto</h2>
+          <p>¿Querés sugerir un juego o hacer consultas? Escribinos.</p>
+
+          <picture>
+            <source media="(min-width:800px)" srcset="assets/contact-large.jpg">
+            <img src="assets/contact-small.jpg" alt="Imagen contacto" class="contact-img">
+          </picture>
+        </div>
+
+        <div class="contact-form">
+          <!-- Reemplazar "yourFormID" con tu ID real de Formspree -->
+          <form id="formContacto" action="https://formspree.io/f/yourFormID" method="POST">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" required placeholder="Tu nombre">
+
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" required placeholder="tu@ejemplo.com">
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Escribí tu consulta..."></textarea>
+
+            <input type="hidden" name="_subject" value="Contacto desde Shidoverso">
+            <input type="hidden" name="_language" value="es">
+
+            <button type="submit" class="btn primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; <span id="year"></span> Shidoverso. Todos los derechos reservados.</p>
+        <p class="small">Proyecto Front End - Preentrega</p>
+      </div>
+      <nav aria-label="Enlaces de pie de página">
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
