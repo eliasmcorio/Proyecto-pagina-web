@@ -2,7 +2,7 @@
 # Shidoverso 🎮✨  
 **Sitio Web Retro Arcade - Proyecto Front End**
 
-Este es un proyecto web inspirado en los clásicos juegos arcade de Capcom, con una estética pixelada y diseño retro. Fue desarrollado como parte de una preentrega para un curso de desarrollo Front End.
+Este es un proyecto web inspirado en los clásicos juegos arcade, con una estética pixelada y diseño retro. Fue desarrollado como parte de una preentrega para un curso de desarrollo Front End.
 
 ---
 
